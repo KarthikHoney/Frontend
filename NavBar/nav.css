@@ -1,0 +1,115 @@
+.container{
+    background-color: blueviolet;
+    height: auto;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.homePic{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.para{
+    font-family: "roboto";
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: wavy;
+    font-weight: bolder;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navItem{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+@media(max-width:500px){
+    .container{
+        display: block;
+        background-image: linear-gradient(red,greenyellow);
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+    }
+    .navItem{
+        display: none;
+    }
+    .label{
+        margin:15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+    .label:checked ~ .nav{
+        display: block;
+        left: 0;
+    }
+}
+
+@media (min-width:501px){
+    .label{
+        display: none;
+    }
+
+    
+    
+    
+
+}
+
+.navItem:hover{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+.label:checked ~ nav{
+    left :0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+/* .navItem.active{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.label:checked ~ nav .navItem{
+    display: flex;
+} */
